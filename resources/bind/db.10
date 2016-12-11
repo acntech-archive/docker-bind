@@ -1,0 +1,13 @@
+;
+; BIND reverse data file for 10.x.x.x subnet
+;
+$TTL	604800
+@		IN		SOA		ns.acntech.internal. bind.acntech.internal. (
+						      1		; Serial
+						 604800		; Refresh
+						  86400		; Retry
+						2419200		; Expire
+						 604800 )	; Negative Cache TTL
+;
+@		IN		NS		ns.acntech.internal.
+1		IN		PTR		router.acntech.internal.
